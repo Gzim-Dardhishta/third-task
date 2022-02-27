@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Quicksand:wght@700&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+.popup-window {
+    // text-align: center;
+
+    .show-popup {
+        font-size: 20px;
+        padding: 10px;
+        margin: 20px 60px;
+        background-color: rgba(0, 0, 0, 0.45);
+        color: #fff;
+        border: none;
+        float: right;
+        cursor: pointer;
+    }
+    .card {
+        font-family: 'Lato', sans-serif;
+        // z-index: 3;
+        border: 1px solid #ddd;
+        background: #fff;
+        border-radius: 10px;
+        width: 50%;
+        padding: 30px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .backdrop {
+        // z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .title h2 {
+        color: rgb(160, 160, 160);
+        font-size: large;
+    }
+    .title h3 {
+        color: #2072EF;
+        font-size: small;
+    }
+
+    .colors {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .show-color {
+        display: flex;
+    }
+    .color1 {
+        background-color: #444;
+        color: #444;
+        width: 3em;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+    .color2 {
+        background-color: #FFF;
+        color: #FFF;
+        width: 3em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+    .color3 {
+        background-color: #2972EF;
+        color: #2972EF;
+        width: 3em;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+    .color4 {
+        background-color: #0053D1;        ;
+        color: #0053D1;
+        width: 3em;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+    
+    .buttons {
+        float: right;
+        margin-top: 3em;
+    }
+    .buttons button {
+        width: 7em;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #2972EF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .buttons button:first-child{
+        margin-right: 20px;
+        background-color: #fff;
+        color: rgb(150, 150, 150);
+        border: 1px solid #ddd;
+    }
+}
