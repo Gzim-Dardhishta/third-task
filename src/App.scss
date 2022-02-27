@@ -117,3 +117,13 @@
         border: 1px solid #ddd;
     }
 }
+
+@media (max-width: 600px){
+    .colors {
+        display: flex;
+        flex-direction: column;
+        .show-color {
+            margin: 10px 0;
+        }
+    }
+}
